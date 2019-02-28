@@ -1,0 +1,25 @@
+.anchorPane {
+
+    -fx-border-insets: 15;
+
+    -fx-background-insets: 15;
+
+    /*
+     * trash
+     */
+    -fx-background-radius: 0;
+
+    -fx-border-radius: 0;
+
+    -fx-border-color: gray;
+
+    -fx-border-style: solid;
+
+    -fx-border-width: 0;
+    /*
+     * trash
+     */
+
+    -fx-effect: dropshadow(gaussian, rgba(100, 100, 100, 0.5), 15, 0.5, 0, 0);
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="93.0" prefWidth="1241.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TopMenuController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="39.0" layoutY="37.0" onMouseClicked="#hamburgerClicked" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="37.0" />
+      <ImageView fx:id="logoHome" fitHeight="93.0" fitWidth="200.0" layoutX="110.0" pickOnBounds="true" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton fx:id="btLogin" contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="900.0" layoutY="23.0" onAction="#btLoginClicked" text="Entrar" underline="true" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="23.0">
+         <graphic>
+            <MaterialDesignIconView glyphName="POWER" size="40" />
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="406.0" layoutY="35.0" prefHeight="25.0" prefWidth="474.0" promptText="Busca" AnchorPane.topAnchor="35.0" />
+      <JFXButton fx:id="btSearch" contentDisplay="GRAPHIC_ONLY" defaultButton="true" layoutX="891.0" layoutY="31.0" onAction="#btSearchClicked" prefHeight="33.0" prefWidth="65.0" AnchorPane.topAnchor="31.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="SEARCH" size="15" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

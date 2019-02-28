@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<JFXDrawer fx:id="drawer" defaultDrawerSize="217.0" onMouseReleased="#drawerClickReleased" prefHeight="527.0" prefWidth="217.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SideDrawerController">
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="527.0" prefWidth="217.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton fx:id="btHome" alignment="BASELINE_LEFT" graphicTextGap="20.0" onAction="#btHomeClicked" prefHeight="54.0" prefWidth="217.0" ripplerFill="BLACK" text="Início" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <MaterialDesignIconView glyphName="HOME" size="20" />
+         </graphic>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="btUsuario" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="54.0" onAction="#btUsuarioClicked" prefHeight="54.0" prefWidth="217.0" text="Usuário" AnchorPane.topAnchor="54.0">
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+         <graphic>
+            <MaterialDesignIconView glyphName="ACCOUNT" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btMedicamento" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="108.0" onAction="#btMedicamentoClicked" prefHeight="54.0" prefWidth="217.0" text="Medicamento" AnchorPane.topAnchor="108.0">
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+            <graphic>
+               <FontAwesomeIconView glyphName="MEDKIT" size="20" />
+            </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btAbout" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="419.0" onAction="#btAboutClicked" prefHeight="54.0" prefWidth="217.0" text="Sobre" AnchorPane.bottomAnchor="54.0">
+         <graphic>
+            <MaterialDesignIconView glyphName="HELP_CIRCLE" size="20" />
+         </graphic>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="btConfig" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="473.0" onAction="#btConfigClicked" prefHeight="54.0" prefWidth="217.0" text="Configurações" AnchorPane.bottomAnchor="0.0">
+         <graphic>
+            <MaterialDesignIconView glyphName="SETTINGS" size="20" />
+         </graphic>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </JFXButton>
+      <JFXDrawer fx:id="drawerUsuario" defaultDrawerSize="217.0" layoutY="108.0" prefHeight="108.0" prefWidth="217.0" visible="false" />
+      <JFXDrawer fx:id="drawerMedicamento" defaultDrawerSize="217.0" layoutY="162.0" prefHeight="108.0" prefWidth="217.0" visible="false" />
+   </children>
+</AnchorPane>
+</JFXDrawer>

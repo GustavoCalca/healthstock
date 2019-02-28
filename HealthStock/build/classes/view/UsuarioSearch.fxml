@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="527.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UsuarioSearchController">
+   <children>
+      <JFXTextField fx:id="txtCodigo" labelFloat="true" layoutX="81.0" layoutY="145.0" prefHeight="25.0" prefWidth="282.0" promptText="Login do Funcionário" />
+      <Label layoutX="81.0" layoutY="37.0" text="Buscar Funcionário">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <MaterialDesignIconView glyphName="ACCOUNT" layoutX="46.0" layoutY="61.0" size="25" />
+      <JFXPasswordField fx:id="txtSenhaNova" disable="true" labelFloat="true" layoutX="81.0" layoutY="326.0" prefHeight="25.0" prefWidth="200.0" promptText="Nova Senha" />
+      <JFXPasswordField fx:id="txtSenhaConfirma" disable="true" labelFloat="true" layoutX="81.0" layoutY="405.0" prefHeight="25.0" prefWidth="200.0" promptText="Confirmar Senha" />
+      <JFXButton fx:id="btSearchId" layoutX="404.0" layoutY="145.0" onAction="#btSearchIdClicked" text="Buscar" />
+      <Label fx:id="labelCaps2" layoutX="305.0" layoutY="330.0" text="Caps Lock está ativada." visible="false" />
+      <Label fx:id="labelCaps3" layoutX="305.0" layoutY="409.0" text="Caps Lock está ativada." visible="false" />
+      <Label fx:id="labelSenhaConfirma" layoutX="81.0" layoutY="440.0" text="As senhas estão diferentes" visible="false" />
+      <Label fx:id="labelSenhaNova" layoutX="81.0" layoutY="361.0" text="A senha deve conter no mínimo 6 caracteres" visible="false" />
+      <ButtonBar layoutX="443.0" layoutY="473.0" prefHeight="40.0" prefWidth="310.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <buttons>
+            <JFXButton fx:id="btConfirm" disable="true" onAction="#btConfirmClicked" text="Confirmar" />
+            <JFXButton fx:id="btEdit" defaultButton="true" disable="true" onAction="#btEditClicked" text="Editar" />
+            <JFXButton fx:id="btDelete" disable="true" onAction="#btDeleteClicked" text="Excluir" />
+            <JFXButton fx:id="btCancel" cancelButton="true" onAction="#btCancelClicked" text="Cancelar" />
+         </buttons>
+      </ButtonBar>
+      <AnchorPane fx:id="senhaNovaAnchorPane" layoutX="256.0" layoutY="343.0" prefHeight="25.0" prefWidth="25.0" />
+      <AnchorPane fx:id="senhaConfirmaAnchorPane" layoutX="256.0" layoutY="422.0" prefHeight="25.0" prefWidth="25.0" />
+      <JFXPasswordField fx:id="txtSenhaAtual" disable="true" labelFloat="true" layoutX="81.0" layoutY="244.0" prefHeight="25.0" prefWidth="200.0" promptText="Senha Atual" />
+      <Label fx:id="labelCaps1" layoutX="305.0" layoutY="248.0" text="Caps Lock está ativada." visible="false" />
+      <Label fx:id="labelSenhaAtual" layoutX="81.0" layoutY="279.0" text="A senha está incorreta" visible="false" />
+      <AnchorPane fx:id="senhaAtualAnchorPane" layoutX="256.0" layoutY="260.0" prefHeight="25.0" prefWidth="25.0" />
+      <MaterialDesignIconView glyphName="MAGNIFY" layoutX="40.0" layoutY="55.0" size="12" />
+      <Label fx:id="labelCodigo" layoutX="81.0" layoutY="178.0" text="Código do Funcionário não encontrado" visible="false" />
+      <JFXTextField fx:id="txtNome" disable="true" labelFloat="true" layoutX="483.0" layoutY="242.0" prefHeight="25.0" prefWidth="282.0" promptText="Nome" />
+      <JFXTextArea fx:id="textAreaLog" editable="false" layoutX="483.0" layoutY="326.0" prefHeight="99.0" prefWidth="282.0" />
+      <Label layoutX="483.0" layoutY="296.0" text="Histórico" />
+      <Hyperlink fx:id="hyperlinkLog" layoutX="683.0" layoutY="437.0" text="Ver Completo" />
+      <Label fx:id="labelSuccess" layoutX="81.0" layoutY="78.0" text="Usuário Adicionado ao Sistema" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
